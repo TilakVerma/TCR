@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projects</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    :root{
+        --white: #ddd;
+        --dark: #111;
+    }
+
+    img{
+        width: 100%;
+        display: block;
+    }
+
+    h1, h2, h3, h4, h5, h6, p{
+        margin: 15px 0;
+    }
+
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+
+
+    /**************** gallery.html ***************/
+
+    /* section three */
+    .section-three{
+        margin: 40px 0;
+    }
+    .single-img{
+        position: relative;
+        margin: 10px;
+    }
+    .single-img-content{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        padding: 5px 30px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .single-img-content h3{
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    /************** end of gallery.html ***********/
+
+
+
+
+    @media screen and (min-width: 800px){
+
+        /* section three */
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }    
+    }
+
+    @media screen and (min-width: 1200px){
+        
+        /* section three */
+        .gallery{
+            grid-template-columns: repeat(3, 1fr);
+        }
+}
+
+/* .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    h1{
+        font-size: 80px;
+        font-weight: 500;
+        background-color: rgb(108,99,255);
+        border-radius: 22px;
+        padding: 15px;
+    } */
+
+    .course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 12px;
+    }
+    h1{
+        font-size: 80px;
+        font-weight: 600;
+        /* background-color: rgb(108,99,255); */
+        background-image: inear-gradient(rgb(228, 251, 251), rgb(108,99,255));
+        border-radius: 22px;
+    }
+
+    h2{
+        font-size: 25px;
+        font-weight: 300;
+        background-color: #ddd;
+        text-align: center;
+    }
+
+    p{
+        color: white;
+        font-size: 14.5px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 15px;
+    }
+
+
+header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(rgb(228, 251, 251), rgb(108,99,255));
+}
+
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: black;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+</style>
+    
+    </head>
+    <body>
+        
+        <header>
+            <h1>Projects</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon fill="white" points="0,100 100,0 100,100"/>
+            </svg>
+        </header>
+
+
+        <!-- <section class="course">
+            <br> <br> <br>
+            <h1>A Few of Our Projects...</h1>
+        </section> -->
+        <!-- <p>A Few of Our Projects...</p> -->
+        <br><br>
+
+        <!-- main -->
+        <section class = "section-three">
+            <div class = "container">
+                <div class = "gallery">
+                    <a href = "p1.jpg">
+                        <div class = "single-img">
+                            <img src = "p1.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop ONE</h3>
+                                <p>Lavish 2 and 3 BHK Units in the Heart of the City with connectivity to Garden and Metro in Dwarka.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p2.jpg">
+                        <div class = "single-img">
+                            <img src = "p2.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop Redbury</h3>
+                                <p>Lavish 3 & 4 BHK Units in  with Luxurious Interiors and Fittings from the best of Brands.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p3.jpg">
+                        <div class = "single-img">
+                            <img src = "p3.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop YellowStone</h3>
+                                <p>Finely furnished units with False ceilings, Modular Kitchen, Luxury Bathrooms and Wardrobes. </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p4.jpg">
+                        <div class = "single-img">
+                            <img src = "p4.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop SILVER</h3>
+                                <p>Lavish 2 and 3 BHK Units in the Heart of the City with connectivity to Garden and Metro in Dwarka.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p5.jpg">
+                        <div class = "single-img">
+                            <img src = "p5.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop Essentia</h3>
+                                <p>3 BHK Floors in Dwarka with complete interior fit out and amenities like Lift, Parking, Roof Top Garden.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p6.jpg">
+                        <div class = "single-img">
+                            <img src = "p6.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop Anandam</h3>
+                                <p>Lavish 2 BHK Units with False ceilings, Modular Kitchen  and Wardrobes in Central Dwarka.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p7.jpg">
+                        <div class = "single-img">
+                            <img src = "p7.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop Ignis</h3>
+                                <p>State of art luxurious 4 BHK Floors with Lush Interiors and Magnetic Amenities in Dwarka.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p8.jpg">
+                        <div class = "single-img">
+                            <img src = "p8.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop SIGMA Series</h3>
+                                <p>ONE series of projects includes finely furnished units across Our 6 location to choose from in Delhi & Dwarka.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href = "p9.jpg">
+                        <div class = "single-img">
+                            <img src = "p9.jpg" alt = "gallery image">
+                            <div class = "single-img-content">
+                                <h3>Homezop Signature</h3>
+                                <p>Budget 3 BHK Homes in the heart of Dwarka with Modular Kitchen, Wardrobes and LIFT.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of main -->
+
+    </body>
+</html>

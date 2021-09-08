@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blogs</title>
+        <meta name = "viewport" content = "width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGrey: #7a7d7f;
+    --lightBlue: rgb(108,99,255);
+    --darkBlue: rgb(108,99,255);
+    --transition: all 0.5s ease;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    line-height: 1.6;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 15px 0;
+}
+
+/********************** Utility Classes *******************/
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.btn{
+    background: var(--darkBlue);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkBlue);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkBlue);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--darkBlue);
+    color: #fff;
+}
+.active{
+    color: var(--lightBlue)!important;
+}
+
+
+/****************** blog.html ****************/
+
+/* section four */
+.section-four{
+    margin: 40px 0;
+}
+.blog{
+    margin: 40px 0;
+}
+.blog-content{
+    padding: 25px;
+    background: #f7f7f7;
+}
+.blog span{
+    display: block;
+}
+.badge{
+    background: var(--lightBlue);
+    width: 140px;
+    border-radius: 5px;
+    padding: 5px 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.misc-info{
+    font-size: 14px;
+    color: var(--dark);
+    margin-top: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 900;
+}
+.blog-text{
+    font-weight: 300;
+}
+
+/*************** end of blog.html ***********/
+
+@media screen and (min-width: 800px){
+    
+    /* section four */
+    .blog-wrapper-sm{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}    
+
+
+@media screen and (min-width: 1000px){
+
+    /* section four */
+    .blog-wrapper-lg{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    /* section four */
+    .blog-wrapper-sm{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.course{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 12px;
+    }
+    h1{
+        font-size: 80px;
+        font-weight: 600;
+        /* background-color: rgb(108,99,255); */
+        background-image: inear-gradient(rgb(228, 251, 251), rgb(108,99,255));
+        border-radius: 22px;
+    }
+
+    h2{
+        font-size: 25px;
+        font-weight: 300;
+        background-color: #ddd;
+        text-align: center;
+    }
+
+    p{
+        color: black;
+        font-size: 14.5px;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 15px;
+    }
+
+
+header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(rgb(228, 251, 251), rgb(108,99,255));
+}
+
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: black;
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
+
+    </style>
+    
+    </head>
+    <body>
+        
+        <header>
+            <h1>HomeZop Blogs</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon fill="white" points="0,100 100,0 100,100"/>
+            </svg>
+        </header>
+
+        <!-- <section class="course">
+            <br> <br>
+            <h1>HomeZop Blogs</h1> 
+            <h2>DESIGN FOR LIFE</h2>
+            <p>Feel at home with all the privacy and comfort you can get by living at Homezop Projects. Every room in our space has an attached private bathroom and is furnished with a Modular Wardrobe.</p>
+            <p>We understand how difficult it is for one to find good and homely living space. At Homezop, we provide you with Semi-furnished 2, 3 and 4 BHK apartments coupled with a lot of extraordinary amenities that will make urban living easy.</p>
+            <p>We give you everything you need feel at home the moment you step in. For the modern families who dip their toes into the city before they take the huge leap, and for those looking for a place to call home, Homezop offers a lot of flexible terms and Payment Plans to suit your Need.</p>
+            <p>Homezop Avenue is an epitome of luxury and elegance within Budget, with seamless connectivity to major city nodes and in proximity to milestones with Smart Home systems in place.</p>
+        </section> -->
+
+        <!-- main -->
+        <section class = "section-four">
+            <div class = "container">
+                <div class = "blogs">
+                    <div class = "blog-wrapper-lg">
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "1.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-1</span>
+                                <span class = "misc-info">
+                                    Published: 1 Week Ago | 25 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Start by Considering the Cost and Your Available Budget
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "2.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-2</span>
+                                <span class = "misc-info">
+                                    Published: 2 Week Ago | 18 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Be Clear About the Fine Print Before Signing Anything
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+
+                    <div class = "blog-wrapper-sm">
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "3.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-3</span>
+                                <span class = "misc-info">
+                                    Published: 3 hrs Ago | 12 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Have a Floor Plan in Mind that Best Suits Your Family
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "4.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-4</span>
+                                <span class = "misc-info">
+                                    Published: 5 Week Ago | 38 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Trust the Advice and Guidance of Your Home Builder
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "5.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-5</span>
+                                <span class = "misc-info">
+                                    Published: 9 hrs Ago | 8 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Create a List of Your Prioritized Home Characteristics
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+
+                        <!-- single blog post -->
+                        <div class = "blog">
+                            <img src = "6.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-6</span>
+                                <span class = "misc-info">
+                                    Published: 9 Week Ago | 125 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Stay Flexible When It Comes to Your Expectations
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class = "blog">
+                            <img src = "7.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-7</span>
+                                <span class = "misc-info">
+                                    Published: 4 Week Ago | 32 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Don’t Underestimate the Value of Energy Efficiency
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class = "blog">
+                            <img src = "8.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-8</span>
+                                <span class = "misc-info">
+                                    Published: 4 Week Ago | 42 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Keep Calm and Collected When Communicating with Your Home Builder
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class = "blog">
+                            <img src = "9.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-9</span>
+                                <span class = "misc-info">
+                                    Published: 6 Week Ago | 55 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Finalize Your Design Decisions before the Construction Begins
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class = "blog">
+                            <img src = "10.jpg">
+                            <div class = "blog-content">
+                                <span class = "badge">Blog-10</span>
+                                <span class = "misc-info">
+                                    Published: 9 hrs Ago | 33 Comments
+                                </span>
+                                <h3 class = "blog-title">
+                                    Best Builders Tips For Beginners
+                                </h3>
+                                <p class = "blog-text">
+                                    Ask to Visit the Job Site During Construction
+                                </p>
+                                <a href = "#" class = "btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of main -->
+
+    </body>
+</html>
+
+
+
+
+
+
+
